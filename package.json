@@ -5,6 +5,7 @@
   "main": "runner.js",
   "scripts": {
     "test": "test",
+    "test:lint": "eslint lib tests --ext js",
     "nodemon": "MODE=development nodemon runner.js"
   },
   "repository": {
