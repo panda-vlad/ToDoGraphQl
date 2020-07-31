@@ -8,6 +8,6 @@ const dbConfig = {
     dialect  : process.env.DIALECT || 'mysql'
 };
 
-module.exports = {
+export default {
     appPort, dbConfig
 };
