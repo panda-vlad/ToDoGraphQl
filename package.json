@@ -1,12 +1,20 @@
 {
   "name": "geniusee",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "Basic implementation for todo list",
   "main": "runner.js",
   "scripts": {
+    "start": "pm2 start runner.js --name todo",
+    "stop": "pm2 delete todo -s &> /dev/null",
     "test": "test",
     "test:lint": "eslint lib tests --ext js",
-    "nodemon": "MODE=development nodemon runner.js"
+    "nodemon": "MODE=development nodemon runner.js",
+    "migration:test": "sequelize db:migrate --config lib/config.js --env test",
+    "seed:dev": "sequelize db:seed:all --config lib/config.js --env development",
+    "migration:dev": "sequelize db:migrate --config lib/config.js --env development",
+    "migration": "sequelize db:migrate --config lib/config.js --env production"
+  
   },
   "repository": {
     "type": "git",
