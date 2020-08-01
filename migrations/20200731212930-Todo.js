@@ -7,6 +7,7 @@ module.exports = {
             status    : { type: Sequelize.ENUM('ACTIVE', 'FINISHED'), defaultValue: 'ACTIVE' },
             value     : { type: Sequelize.STRING },
             createdAt : { type: Sequelize.DATE, allowNull: false },
+            deletedAt : { type: Sequelize.DATE, defaultValue: null },
             updatedAt : { type: Sequelize.DATE, allowNull: false }
         }, { logging: console.log });
     },
