@@ -1,7 +1,7 @@
 import express          from 'express';
 import middlewares      from './lib/middlewares.js';
 import router           from './lib/router.js';
-import { appPort }      from './etc/config.js';
+import { appPort }      from './lib/config.js';
 
 
 // Init app
