@@ -3,6 +3,7 @@ import dotenv           from 'dotenv';
 dotenv.config();
 
 const appPort = process.env.appPort || 3000;
+
 const dbConfig = {
     development : {
         database : process.env.DB || 'base',
@@ -20,6 +21,7 @@ const dbConfig = {
         port     : process.env.DBPORT || 3306,
         dialect  : process.env.DIALECT || 'mysql'
     }
+
 };
 
 export default {
