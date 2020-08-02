@@ -8,14 +8,16 @@ const factory = new TestFactory();
 const request = supertest.agent(runner);
 
 
-global.beforeAll(async () => {
+global.beforeEach(async (done) => {
     await factory.cleanup();
+
     await factory.setDefaultTodos();
+    done();
 });
 
 
 describe('Query test', () => {
-    it('Query with id only', () => {
+    it('Query with id only', async () => {
         return request
             .get('/v1/todo')
             .send({
