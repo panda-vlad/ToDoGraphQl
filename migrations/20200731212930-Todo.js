@@ -9,7 +9,10 @@ module.exports = {
             createdAt : { type: Sequelize.DATE, allowNull: false },
             deletedAt : { type: Sequelize.DATE, defaultValue: null },
             updatedAt : { type: Sequelize.DATE, allowNull: false }
-        }, { logging: console.log });
+        },  {
+            charset : 'utf8mb4'
+            // collate : 'utf8_unicode_ci'
+        });
     },
 
     down : (queryInterface) => {
