@@ -1,8 +1,8 @@
 import supertest    from 'supertest';
 import { sequelize }   from '../../lib/models';
-import runner       from '../../runner';
-import TestFactory  from '../TestFactory';
+import runner       from '../../testRunner';
 
+import TestFactory  from '../TestFactory';
 
 const factory = new TestFactory();
 const request = supertest.agent(runner);

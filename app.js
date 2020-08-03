@@ -2,7 +2,7 @@ import express          from 'express';
 import middlewares      from './lib/middlewares.js';
 import router           from './lib/router.js';
 import { appPort }      from './lib/config.js';
-
+import serverless       from 'serverless-http';
 
 // Init app
 const app = express();
@@ -39,4 +39,4 @@ process.on('SIGINT', () => {
     });
 });
 
-export default app;
+export const handler = serverless(app);

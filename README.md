@@ -39,3 +39,6 @@ service mysql start
 7. npm start
 
 [API_DOC](./api/README.md)
+
+### Update 
+ - https://pqhdgesb34.execute-api.us-east-2.amazonaws.com/v1/todo
