@@ -16,7 +16,10 @@
     "migration": "sequelize db:migrate --config lib/config.js --env production"
   },
   "jest": {
-    "modulePathIgnorePatterns": ["fixtures", "TestFactory.js"]
+    "modulePathIgnorePatterns": [
+      "fixtures",
+      "TestFactory.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -51,6 +54,7 @@
     "babel-jest": "^24.9.0",
     "babel-plugin-add-module-exports": "^1.0.2",
     "babel-polyfill": "^6.26.0",
+    "babel-preset-aws-lambda": "^1.0.2",
     "babel-register": "^6.26.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -78,6 +82,17 @@
     "babel-plugin-transform-decorators": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.11.0",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-decorators": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-transform-async-to-generator": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/runtime": "^7.11.0",
     "babel-preset-env": "^1.7.0",
     "bcryptjs": "^2.4.3",
     "bluebird": "^3.5.3",
@@ -109,6 +124,7 @@
     "pm2": "^3.3.1",
     "sequelize": "^5.21.3",
     "sequelize-cli": "^5.5.0",
+    "serverless-http": "^2.5.0",
     "supertest": "^4.0.2"
   }
 }

@@ -1,6 +1,7 @@
 import supertest    from 'supertest';
 import { sequelize }   from '../../lib/models';
-import runner       from '../../runner';
+import runner       from '../../testRunner';
+
 import TestFactory  from '../TestFactory';
 
 
